@@ -4,16 +4,9 @@ var methodOverride = require('method-override');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var exphbs = require('express-handlebars');
-// Require models
-var articles = require('./models/articles.js');
-var comments = require('./models/comments.js');
-// Require scraping libraries
-var request = require('request');
-var cheerio = require('cheerio');
-
 
 // Set listening port
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Instantiate express server
 var server = express();
@@ -38,11 +31,8 @@ db.once('open', function() {
 });
 
 
-// Server Routes --->
-server.get('/', function(req, res) {
-	res.send('Server is up');
-});
-
+// Require routes
+require('./controllers/htmlRoutes.js')(server);
 
 
 // Start server listening on port

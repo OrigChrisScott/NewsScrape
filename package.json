@@ -1,0 +1,39 @@
+{
+  "name": "newsscrape",
+  "version": "1.0.0",
+  "description": "A news web scraping app utilizing a MongoDB backend with Mongoose and Cheerio libraries",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/origchrisscott/NewsScrape.git"
+  },
+  "keywords": [
+    "Express",
+    "Handlebars",
+    "NodeJS",
+    "Javascript",
+    "MongoDB",
+    "Mongoose",
+    "Cheerio",
+    "Scrape",
+    "Heroku"
+  ],
+  "author": "Chris Scott",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/origchrisscott/NewsScrape/issues"
+  },
+  "homepage": "https://github.com/origchrisscott/NewsScrape#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.9",
+    "mongoose": "^4.11.8",
+    "request": "^2.81.0"
+  }
+}
